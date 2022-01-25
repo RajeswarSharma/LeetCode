@@ -52,23 +52,4 @@ class Solution {
          return false;
          
      }
-    
-    vector<int> BFS(TreeNode* root){
-        queue<TreeNode*> seq;
-        TreeNode* temp ;
-        vector<int> v;
-        seq.push(root);
-        while(!seq.empty()){
-            temp = seq.front();
-            seq.pop();
-            v.push_back(temp->val);
-            if(temp->left){
-                seq.push(temp->left);
-            }  
-            if(temp->right){
-                seq.push(temp->right);
-            }
-        }
-        return v;
-    }
 };
