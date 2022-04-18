@@ -15,21 +15,23 @@ class Solution{
     //Function to rearrange  the array elements alternately.
     void rearrange(long long *arr, int n) 
     { 
-    if(n==1)return ;
-    vector<long long>v;
-    long long left=0,right=n-1;
-    int count=0;
-    while(left<=right){
-       // cout<<arr[right]<<" ";
-       v.push_back(arr[right]);
-        right--;
-       // cout<<arr[left]<<" ";
-       v.push_back(arr[left]);
-        left++;
+    	if(n ==1) return;
+    	vector<long long> l;
+    	int x = 0 ,y = n-1;
+    	while(x<=y){
+    	    l.push_back(arr[y]);
+    	    l.push_back(arr[x]);
+    	    x++;
+    	    y--;
+    	}
+    	for(int i =0;i<n;i++){
+    	   arr[i] = l[i];
+    	}
+        
+    
+    	// Your code here
+    	 
     }
-    for(long long i=0;i<n;i++){
-       arr[i] = v[i];
-    }}
 };
 
 // { Driver Code Starts.
