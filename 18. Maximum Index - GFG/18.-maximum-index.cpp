@@ -7,9 +7,7 @@ using namespace std;
 class Solution{
     public:
         
-    // A[]: input array
-    // N: size of array
-    // Function to find the maximum index difference.
+   
     int maxIndexDiff(int arr[], int N) 
     { 
        
@@ -26,8 +24,7 @@ class Solution{
         int x=0, y = aux[0];
         
         max_dis = -1;
-        // for(int i =0;i<N;i++) cout<<aux[i]<<" ";
-        // cout<<endl;
+    
         while(y<N&&x<=y){
             
             if(arr[x]<=arr[y])
