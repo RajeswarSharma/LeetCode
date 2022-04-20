@@ -22,9 +22,7 @@ class Solution{
         }
         
         int x=0, y = aux[0];
-        
         max_dis = -1;
-    
         while(y<N&&x<=y){
             
             if(arr[x]<=arr[y])
@@ -34,16 +32,11 @@ class Solution{
                 y = aux[y+1];
                 // cout<<y<<endl;
             }
-            
             else x++;
-            
         }
-          
           return max_dis;
-       
     }
 };
-
 // { Driver Code Starts.
   
 /* Driver program to test above functions */
